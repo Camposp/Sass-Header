@@ -1,3 +1,7 @@
-.btn-menu{
-padding: 20px;
+.btn-menu-stay{
+padding: 15px;
+border: none;
+background-color: $primary-color;
+display: flex;
+justify-content: flex-end;
 }

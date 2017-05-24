@@ -1,3 +1,55 @@
+*{
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+.btn-menu-stay {
+  display: block;
+
+
+}
+.menu{
+  color: $secondary-color;
+  display: none;
+
+}
+
+.logo-web{
+  display: none;
+}
+
+.menu2{
+  display: none;
+}
+.menu ul{
+  flex-direction: column;
+  list-style: none;
+  padding: 0;
+  border: 1px solid white;
+}
+
+li{
+  padding: 5px;
+  border: 1px solid white;
+  width: 30%;
+  animation-name: anmtn;
+  animation-duration: 2s;
+  animation-timing-function:linear;
+
+}
+
+.menu ul li{
+background-color: $primary-color;
+}
+
+.header-inner{
+  background-color: $primary-color;
+  margin-bottom: 0;
+
+}
+
+
 body{
   margin:0;
 
@@ -5,44 +57,66 @@ body{
 
 header{
 
-  background-color: $primary-color;
+  // background-color: $primary-color;
   font-family: $default-font-family;
   font-size: $default-font-size;
+
 }
 
-header label{
-  display: none;
+@keyframes anmtn {
+  0%{background-color: white;}
+
 }
 
-.menu ul{
-  list-style: none;
-  padding: 0;
-  display: flex;
-  justify-content: flex-end;
-  margin: 0;
-}
 
-.menu li{
-  flex-grow: 1;
-}
+@media (min-width: 780px){
 
-a{
-  display: block;
-  padding: 10px;
-  text-decoration: none;
-  color: $secundary-color;
-}
+  .header-inner .btn-menu-stay{
+    display: none;
+  }
 
-@media (max-width: 780px){
-  header label{
+  .header-inner {
+    display: flex;
+    justify-content: flex-end;
+
+    padding: 15px;
+    height: 70px;
+  }
+
+  span{
+    display: none;
+  }
+
+  .menu {
+    display: none;
+  }
+
+  .logo-web{
     display: block;
   }
-  .menu{
-    position: absolute;
-    background-color: $primary-color;
+
+  .menu2{
+    list-style: none;
+    padding: 0;
+    display: inline;
+    display: flex;
+    align-items: flex-end;
+    color: $secondary-color
+  }
+
+  li{
+    border: 1px solid white;
+    list-style: none;
+    display: inline;
+    animation-name: anmtn;
+    animation-duration: 3s;
+    animation-timing-function:linear;
 
   }
-  .menu ul{
-    flex-direction: column;
+
+  @keyframes anmtn {
+    0%{color: $primary-color;}
+
   }
+
 }

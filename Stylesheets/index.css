@@ -1,84 +1,167 @@
-/*
-Error: Invalid CSS after "    transition:": expected expression (e.g. 1px, bold), was "}"
-        on line 44 of /home/elisa/Escritorio/Sass-Header/Stylesheets/_general.scss
-        from line 2 of /home/elisa/Escritorio/Sass-Header/Stylesheets/index.scss
+* {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  margin: 0;
+  padding: 0; }
 
-39:   }
-40:   .menu{
-41:     position: absolute;
-42:     background-color: $primary-color;
-43:     transition:
-44:   }
-45:   .menu ul{
-46:     flex-direction: column;
-47:   }
-48: }
+.btn-menu-stay {
+  display: block; }
 
-Backtrace:
-/home/elisa/Escritorio/Sass-Header/Stylesheets/_general.scss:44
-/home/elisa/Escritorio/Sass-Header/Stylesheets/index.scss:2
-/usr/share/koala/rubygems/gems/sass-3.4.23/lib/sass/scss/parser.rb:1209:in `expected'
-/usr/share/koala/rubygems/gems/sass-3.4.23/lib/sass/script/lexer.rb:229:in `expected!'
-/usr/share/koala/rubygems/gems/sass-3.4.23/lib/sass/script/parser.rb:710:in `assert_expr'
-/usr/share/koala/rubygems/gems/sass-3.4.23/lib/sass/script/parser.rb:75:in `parse'
-/usr/share/koala/rubygems/gems/sass-3.4.23/lib/sass/scss/parser.rb:1063:in `sass_script'
-/usr/share/koala/rubygems/gems/sass-3.4.23/lib/sass/scss/parser.rb:909:in `value!'
-/usr/share/koala/rubygems/gems/sass-3.4.23/lib/sass/scss/parser.rb:778:in `block in try_declaration'
-/usr/share/koala/rubygems/gems/sass-3.4.23/lib/sass/scss/parser.rb:1183:in `call'
-/usr/share/koala/rubygems/gems/sass-3.4.23/lib/sass/scss/parser.rb:1183:in `rethrow'
-/usr/share/koala/rubygems/gems/sass-3.4.23/lib/sass/scss/parser.rb:791:in `try_declaration'
-/usr/share/koala/rubygems/gems/sass-3.4.23/lib/sass/scss/parser.rb:720:in `declaration_or_ruleset'
-/usr/share/koala/rubygems/gems/sass-3.4.23/lib/sass/scss/parser.rb:685:in `block_child'
-/usr/share/koala/rubygems/gems/sass-3.4.23/lib/sass/scss/parser.rb:677:in `block_contents'
-/usr/share/koala/rubygems/gems/sass-3.4.23/lib/sass/scss/parser.rb:666:in `block'
-/usr/share/koala/rubygems/gems/sass-3.4.23/lib/sass/scss/parser.rb:737:in `declaration_or_ruleset'
-/usr/share/koala/rubygems/gems/sass-3.4.23/lib/sass/scss/parser.rb:685:in `block_child'
-/usr/share/koala/rubygems/gems/sass-3.4.23/lib/sass/scss/parser.rb:677:in `block_contents'
-/usr/share/koala/rubygems/gems/sass-3.4.23/lib/sass/scss/parser.rb:666:in `block'
-/usr/share/koala/rubygems/gems/sass-3.4.23/lib/sass/scss/parser.rb:409:in `media_directive'
-/usr/share/koala/rubygems/gems/sass-3.4.23/lib/sass/scss/parser.rb:222:in `special_directive'
-/usr/share/koala/rubygems/gems/sass-3.4.23/lib/sass/scss/parser.rb:197:in `directive'
-/usr/share/koala/rubygems/gems/sass-3.4.23/lib/sass/scss/parser.rb:684:in `block_child'
-/usr/share/koala/rubygems/gems/sass-3.4.23/lib/sass/scss/parser.rb:677:in `block_contents'
-/usr/share/koala/rubygems/gems/sass-3.4.23/lib/sass/scss/parser.rb:125:in `stylesheet'
-/usr/share/koala/rubygems/gems/sass-3.4.23/lib/sass/scss/parser.rb:41:in `parse'
-/usr/share/koala/rubygems/gems/sass-3.4.23/lib/sass/engine.rb:406:in `_to_tree'
-/usr/share/koala/rubygems/gems/sass-3.4.23/lib/sass/engine.rb:312:in `to_tree'
-/usr/share/koala/rubygems/gems/sass-3.4.23/lib/sass/tree/visitors/perform.rb:326:in `block in visit_import'
-/usr/share/koala/rubygems/gems/sass-3.4.23/lib/sass/stack.rb:88:in `block in with_import'
-/usr/share/koala/rubygems/gems/sass-3.4.23/lib/sass/stack.rb:115:in `with_frame'
-/usr/share/koala/rubygems/gems/sass-3.4.23/lib/sass/stack.rb:88:in `with_import'
-/usr/share/koala/rubygems/gems/sass-3.4.23/lib/sass/tree/visitors/perform.rb:325:in `visit_import'
-/usr/share/koala/rubygems/gems/sass-3.4.23/lib/sass/tree/visitors/base.rb:36:in `visit'
-/usr/share/koala/rubygems/gems/sass-3.4.23/lib/sass/tree/visitors/perform.rb:160:in `block in visit'
-/usr/share/koala/rubygems/gems/sass-3.4.23/lib/sass/stack.rb:79:in `block in with_base'
-/usr/share/koala/rubygems/gems/sass-3.4.23/lib/sass/stack.rb:115:in `with_frame'
-/usr/share/koala/rubygems/gems/sass-3.4.23/lib/sass/stack.rb:79:in `with_base'
-/usr/share/koala/rubygems/gems/sass-3.4.23/lib/sass/tree/visitors/perform.rb:160:in `visit'
-/usr/share/koala/rubygems/gems/sass-3.4.23/lib/sass/tree/visitors/base.rb:52:in `block in visit_children'
-/usr/share/koala/rubygems/gems/sass-3.4.23/lib/sass/tree/visitors/base.rb:52:in `map'
-/usr/share/koala/rubygems/gems/sass-3.4.23/lib/sass/tree/visitors/base.rb:52:in `visit_children'
-/usr/share/koala/rubygems/gems/sass-3.4.23/lib/sass/tree/visitors/perform.rb:169:in `block in visit_children'
-/usr/share/koala/rubygems/gems/sass-3.4.23/lib/sass/tree/visitors/perform.rb:181:in `with_environment'
-/usr/share/koala/rubygems/gems/sass-3.4.23/lib/sass/tree/visitors/perform.rb:168:in `visit_children'
-/usr/share/koala/rubygems/gems/sass-3.4.23/lib/sass/tree/visitors/base.rb:36:in `block in visit'
-/usr/share/koala/rubygems/gems/sass-3.4.23/lib/sass/tree/visitors/perform.rb:188:in `visit_root'
-/usr/share/koala/rubygems/gems/sass-3.4.23/lib/sass/tree/visitors/base.rb:36:in `visit'
-/usr/share/koala/rubygems/gems/sass-3.4.23/lib/sass/tree/visitors/perform.rb:159:in `visit'
-/usr/share/koala/rubygems/gems/sass-3.4.23/lib/sass/tree/visitors/perform.rb:8:in `visit'
-/usr/share/koala/rubygems/gems/sass-3.4.23/lib/sass/tree/root_node.rb:36:in `css_tree'
-/usr/share/koala/rubygems/gems/sass-3.4.23/lib/sass/tree/root_node.rb:29:in `render_with_sourcemap'
-/usr/share/koala/rubygems/gems/sass-3.4.23/lib/sass/engine.rb:381:in `_render_with_sourcemap'
-/usr/share/koala/rubygems/gems/sass-3.4.23/lib/sass/engine.rb:298:in `render_with_sourcemap'
-/usr/share/koala/rubygems/gems/sass-3.4.23/lib/sass/exec/sass_scss.rb:391:in `run'
-/usr/share/koala/rubygems/gems/sass-3.4.23/lib/sass/exec/sass_scss.rb:63:in `process_result'
-/usr/share/koala/rubygems/gems/sass-3.4.23/lib/sass/exec/base.rb:52:in `parse'
-/usr/share/koala/rubygems/gems/sass-3.4.23/lib/sass/exec/base.rb:19:in `parse!'
-/usr/share/koala/rubygems/gems/sass-3.4.23/bin/sass:13:in `<top (required)>'
-/usr/share/koala/bin/sass:18:in `load'
-/usr/share/koala/bin/sass:18:in `<main>'
-*/
-body:before {
-  white-space: pre;
+.menu {
+  color: white;
+  display: none; }
+
+.logo-web {
+  display: none; }
+
+.menu2 {
+  display: none; }
+
+.menu ul {
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  list-style: none;
+  padding: 0;
+  border: 1px solid white; }
+
+li {
+  padding: 5px;
+  border: 1px solid white;
+  width: 30%;
+  -webkit-animation-name: anmtn;
+          animation-name: anmtn;
+  -webkit-animation-duration: 2s;
+          animation-duration: 2s;
+  -webkit-animation-timing-function: linear;
+          animation-timing-function: linear; }
+
+.menu ul li {
+  background-color: #ff99ff; }
+
+.header-inner {
+  background-color: #ff99ff;
+  margin-bottom: 0; }
+
+body {
+  margin: 0; }
+
+header {
   font-family: monospace;
-  content: "Error: Invalid CSS after \"    transition:\": expected expression (e.g. 1px, bold), was \"}\"\A         on line 44 of /home/elisa/Escritorio/Sass-Header/Stylesheets/_general.scss\A         from line 2 of /home/elisa/Escritorio/Sass-Header/Stylesheets/index.scss\A \A 39:   }\A 40:   .menu{\A 41:     position: absolute;\A 42:     background-color: $primary-color;\A 43:     transition:\A 44:   }\A 45:   .menu ul{\A 46:     flex-direction: column;\A 47:   }\A 48: }"; }
+  font-size: 16px; }
+
+@-webkit-keyframes anmtn {
+  0% {
+    background-color: white; } }
+
+@keyframes anmtn {
+  0% {
+    background-color: white; } }
+@media (min-width: 780px) {
+  .header-inner .btn-menu-stay {
+    display: none; }
+
+  .header-inner {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: end;
+        -ms-flex-pack: end;
+            justify-content: flex-end;
+    padding: 15px;
+    height: 70px; }
+
+  span {
+    display: none; }
+
+  .menu {
+    display: none; }
+
+  .logo-web {
+    display: block; }
+
+  .menu2 {
+    list-style: none;
+    padding: 0;
+    display: inline;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: end;
+        -ms-flex-align: end;
+            align-items: flex-end;
+    color: white; }
+
+  li {
+    border: 1px solid white;
+    list-style: none;
+    display: inline;
+    -webkit-animation-name: anmtn;
+            animation-name: anmtn;
+    -webkit-animation-duration: 3s;
+            animation-duration: 3s;
+    -webkit-animation-timing-function: linear;
+            animation-timing-function: linear; }
+
+  @-webkit-keyframes anmtn {
+    0% {
+      color: #ff99ff; } }
+
+  @keyframes anmtn {
+    0% {
+      color: #ff99ff; } } }
+.btn-menu-stay {
+  padding: 15px;
+  border: none;
+  background-color: #ff99ff;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end; }
+
+.btn-menu {
+  display: none; }
+
+@font-face {
+  font-family: 'icomoon';
+  src: url("../fonts/icomoon.eot?6vy1gy");
+  src: url("../fonts/icomoon.eot?6vy1gy#iefix") format("embedded-opentype"), url("../fonts/icomoon.ttf?6vy1gy") format("truetype"), url("../fonts/icomoon.woff?6vy1gy") format("woff"), url("../fonts/icomoon.svg?6vy1gy#icomoon") format("svg");
+  font-weight: normal;
+  font-style: normal; }
+[class^="icon-"], [class*=" icon-"] {
+  /* use !important to prevent issues with browser extensions that change fonts */
+  font-family: 'icomoon' !important;
+  speak: none;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+  /* Better Font Rendering =========== */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale; }
+
+.icon-book:before {
+  color: white;
+  content: "\e91f"; }
+
+.icon-phone:before {
+  content: "\e942";
+  color: white; }
+
+.icon-location:before {
+  content: "\e947";
+  color: white; }
+
+.icon-menu:before {
+  content: "\e9bd";
+  color: white; }
+
+.icon-cloud:before {
+  content: "\e9c1";
+  color: white; }
+
+/*# sourceMappingURL=index.css.map */
