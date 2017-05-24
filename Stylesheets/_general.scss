@@ -52,15 +52,11 @@ background-color: $primary-color;
 
 body{
   margin:0;
-
 }
 
 header{
-
-  // background-color: $primary-color;
   font-family: $default-font-family;
   font-size: $default-font-size;
-
 }
 
 @keyframes anmtn {
@@ -78,7 +74,6 @@ header{
   .header-inner {
     display: flex;
     justify-content: flex-end;
-
     padding: 15px;
     height: 70px;
   }
@@ -111,7 +106,6 @@ header{
     animation-name: anmtn;
     animation-duration: 3s;
     animation-timing-function:linear;
-
   }
 
   @keyframes anmtn {

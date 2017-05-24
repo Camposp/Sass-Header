@@ -4,7 +4,7 @@ function appearMenu() {
 
   var menuHam = document.getElementsByClassName("menu")[0];
 
-  if (menuHam.style.display == "none"){
+  if (menuHam.style.display == "none" || menuHam.style.display === ""){
 
       menuHam.style.display = "block";
   }
